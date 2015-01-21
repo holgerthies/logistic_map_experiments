@@ -27,7 +27,7 @@ int iRRAM_compute(const int& num_iter) {
 int main (int argc,char **argv)
 {
 	std::ofstream fout("data_prec/data.out");
-	vector<int> num_iters = {10,50,100,500,1000,5000,10000,50000};
+	vector<int> num_iters = {10,50,100,500,1000,5000,10000,20000};
 	for(int i : num_iters){
 		iRRAM_initialize(argc,argv);
 		int prec = iRRAM_exec(iRRAM_compute,i);

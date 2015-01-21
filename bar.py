@@ -11,7 +11,7 @@ for i,fn in enumerate(filenames):
 		data = f.readlines()
 		width = 0.5
 		fig, ax = plt.subplots()
-		plt.xlabel("Number of iterations")
+		plt.xlabel("number of iterations")
 		plt.ylabel("max. precision ($2^{-n}$)")
 		X,Y = zip(*map(lambda x : map(int, x.split()), data))
 		ind = np.arange(len(X))
