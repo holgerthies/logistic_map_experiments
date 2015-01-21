@@ -29,3 +29,6 @@
 
 # linter
 cpplint.py
+
+# output files
+/data

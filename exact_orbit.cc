@@ -12,6 +12,7 @@ int iRRAM_compute(int argc, char **argv) {
 	int num_iter = atoi(argv[1]);
 	REAL a = 3.8;
 	REAL x = 0.4;
+	cout << "exact" << endl;
 	for(int i=0; i<=num_iter; i++) {
 		cout << i << " " << x << endl;
 		x = a*x*(1-x);	

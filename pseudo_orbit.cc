@@ -18,6 +18,7 @@ int main(int argc, char** argv) {
 	mpfr_float::default_precision(prec);
 	mpfr_float a = 3.8;
 	mpfr_float x = 0.4;
+	cout << prec << " decimals" << endl;
 	for(int i=0; i<=num_iter; i++) {
 		cout << i << " " << x << endl;
 		x = a*x*(1-x);	
